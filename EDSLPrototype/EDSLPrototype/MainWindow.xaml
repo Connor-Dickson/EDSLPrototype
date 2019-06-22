@@ -22,7 +22,7 @@
         <Label x:Name="startDateLabel" Content="Start Date:" HorizontalAlignment="Left" Margin="98,188,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="startDateDropBox" HorizontalAlignment="Left" Margin="196,192,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
         <Button x:Name="editDatesButton" Content="Edit Dates" HorizontalAlignment="Left" Margin="481,119,0,0" VerticalAlignment="Top" Width="75" Click="generateDates"/>
-        <Button x:Name="saveSeasonButton" Content="Save Season" HorizontalAlignment="Left" Margin="481,157,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="saveSeasonButton" Content="Save Season" HorizontalAlignment="Left" Margin="481,157,0,0" VerticalAlignment="Top" Width="75" Click="saveSeason"/>
         <Separator HorizontalAlignment="Left" Height="16" Margin="0,47,0,0" VerticalAlignment="Top" Width="782"/>
         <Separator HorizontalAlignment="Left" Height="34" Margin="10,214,0,0" VerticalAlignment="Top" Width="782"/>
         <Label x:Name="drawLabel" Content="Draw" HorizontalAlignment="Left" Margin="335,254,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
@@ -31,7 +31,7 @@
         <Button x:Name="viewDivisionButton" Content="View Division" HorizontalAlignment="Left" Margin="196,400,0,0" VerticalAlignment="Top" Width="86"/>
         <Button x:Name="createDrawButton" Content="Create Draw" HorizontalAlignment="Left" Margin="431,342,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="viewDrawButton" Content="View Draw" HorizontalAlignment="Left" Margin="563,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <ListBox x:Name="dateList" HorizontalAlignment="Left" Height="100" Margin="662,83,0,0" VerticalAlignment="Top" Width="100" />
+        <ListBox x:Name="dateList" HorizontalAlignment="Left" Height="100" Margin="662,83,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

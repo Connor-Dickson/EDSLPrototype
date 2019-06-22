@@ -28,7 +28,7 @@ namespace EDSLPrototype
         {
             var SeasonScreen = new MainWindow();
             SeasonScreen.Show();
-            this.Close();
+            Close();
         }
     }
 }

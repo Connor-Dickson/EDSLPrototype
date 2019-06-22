@@ -10,17 +10,16 @@ namespace EDSLPrototype
     {
         public string Name { get; set; }
         public int noOfRounds { get; set; }
-        public DateTime startDate { get; set; }
-        public List<DateTime> dateList { get; set; }
-        public List<int> roundList { get; set; }
+        public string startDate { get; set; }
+        public List<string> dateList { get; set; }
         
-        public Season(string name, int roundNo, DateTime start, List<DateTime> dates, List<int> rounds)
+        public Season(string name, int roundNo, string start, List<string> dates)
         {
             name = Name;
             roundNo = noOfRounds;
             start = startDate;
             dates = dateList;
-            rounds = roundList;
+            
         }
 
         public List<DateTime> populateRoundDates(DateTime startDate)
