@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace EDSLPrototype
 {
@@ -41,7 +42,8 @@ namespace EDSLPrototype
 
         private void displayResultsScreen(object sender, RoutedEventArgs e)
         {
-            var ResultsScreen = new Results();
+            ObservableCollection<ResultsClass> resultsData = new ObservableCollection<ResultsClass>();
+            var ResultsScreen = new Results(resultsData);
             ResultsScreen.Show();
             Close();
         }

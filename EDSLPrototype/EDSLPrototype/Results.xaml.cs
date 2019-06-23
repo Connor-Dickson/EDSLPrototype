@@ -20,18 +20,16 @@ namespace EDSLPrototype
     /// </summary>
     public partial class Results : Window
     {
-        public ObservableCollection<ResultsClass> resultsData = new ObservableCollection<ResultsClass>();
-        public Results()
+
+
+        public ObservableCollection<ResultsClass> resultsData { get; set; }
+
+        public Results(ObservableCollection<ResultsClass> resultsData)
         {
+            
             InitializeComponent();
             
-            ResultsClass a = new ResultsClass(1, "Ringwood", "Wantirna", 0, 0);
-            ResultsClass b = new ResultsClass(2, "Murrumbeena", "Lilydale", 0, 0);
-            ResultsClass c = new ResultsClass(3, "test", "testing", 0, 0);
-            resultsData.Add(a);
-            resultsData.Add(b);
-            resultsData.Add(c);
-            resultsGrid.ItemsSource = resultsData;
+
         }
 
         private void displaySeasonScreen(object sender, RoutedEventArgs e)
@@ -43,9 +41,19 @@ namespace EDSLPrototype
 
         private void EditRoundButton_Click(object sender, RoutedEventArgs e)
         {
-            if(seasonDropBox.Text != null && divisionDropBx.Text != null && roundDropBox.Text != null && roundDateTextBox.Text != null)
+            
+            if (seasonDropBox.Text != null && divisionDropBx.Text != null && roundDropBox.Text != null && roundDateTextBox.Text != null)
             {
-                
+                //List<ResultsClass> resultsData = new List<ResultsClass>();
+                //resultsData.Add(a);
+                resultsData = new ObservableCollection<ResultsClass>()
+                {
+                new ResultsClass(1, "Ringwood", "Wantirna", 0, 0),
+                new ResultsClass(2, "Murrumbeena", "Lilydale", 0, 0),
+                new ResultsClass(3, "Beaconsfield Upper", "Oakleigh", 0, 0)
+                };
+                resultsGrid.ItemsSource = resultsData;
+                resultsGrid.DataContext = resultsData;
             }
         }
 

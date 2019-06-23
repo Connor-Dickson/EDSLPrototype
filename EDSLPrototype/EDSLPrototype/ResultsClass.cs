@@ -13,14 +13,15 @@ namespace EDSLPrototype
         public int hTeamGoals { get; set; }
         public string aTeam { get; set; }
         public int aTeamGoals { get; set; }
+        
 
         public ResultsClass(int gNo, string home, string away, int aG, int hG)
         {
-            gNo = GameNo;
-            home = hTeam;
-            away = aTeam;
-            aG = aTeamGoals;
-            hG = hTeamGoals;
+            GameNo = gNo;
+            hTeam = home;
+            aTeam = away;
+            aTeamGoals = aG;
+            hTeamGoals = hG;
         }
     }
 }

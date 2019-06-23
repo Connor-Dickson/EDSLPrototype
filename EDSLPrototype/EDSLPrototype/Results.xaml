@@ -29,10 +29,10 @@
         <Label x:Name="roundHeadingLabel" Content="Round" HorizontalAlignment="Left" Margin="371,268,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <DataGrid x:Name="resultsGrid" HorizontalAlignment="Left" Height="224" Margin="85,310,0,0" VerticalAlignment="Top" Width="630" AutoGenerateColumns="False" ItemsSource="{Binding resultsData}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Game No." Binding="{Binding GameNo}"/>
-                <DataGridTextColumn Header="Home Team" Binding="{Binding hTeam}"/>
+                <DataGridTextColumn Header="Game No." Binding="{Binding GameNo}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Home Team" Binding="{Binding hTeam}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Home Team Goals" Binding="{Binding hTeamGoals}"/>
-                <DataGridTextColumn Header="Away Team" Binding="{Binding aTeam}"/>
+                <DataGridTextColumn Header="Away Team" Binding="{Binding aTeam}" IsReadOnly="True"/>
                 <DataGridTextColumn Header="Away Team Goals" Binding="{Binding aTeamGoals}"/>
             </DataGrid.Columns>
         </DataGrid>
