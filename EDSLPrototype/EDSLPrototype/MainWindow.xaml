@@ -10,11 +10,11 @@
         <ComboBox x:Name="seasonNameDropBox" HorizontalAlignment="Left" Margin="196,117,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
         <Button x:Name="Season" Content="Season" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="Results" Content="Results" HorizontalAlignment="Left" Margin="163,10,0,0" VerticalAlignment="Top" Width="75" Click="displayResultsScreen" />
-        <Button x:Name="Reports" Content="Reports" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Divisions" Content="Divisions" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Clubs" Content="Clubs" HorizontalAlignment="Left" Margin="481,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="595,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Players" Content="Players" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Reports" Content="Reports" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Divisions" Content="Divisions" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Clubs" Content="Clubs" HorizontalAlignment="Left" Margin="481,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="595,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Players" Content="Players" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
         <Label x:Name="seasonLabel" Content="Season" HorizontalAlignment="Left" Margin="335,47,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.41,0.296" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="seasonNameLabel" Content="Season Name:" HorizontalAlignment="Left" Margin="98,113,0,0" VerticalAlignment="Top"/>
         <Label x:Name="noOfRoundsLabel" Content="No of Rounds:" HorizontalAlignment="Left" Margin="98,157,0,0" VerticalAlignment="Top"/>
@@ -27,10 +27,10 @@
         <Separator HorizontalAlignment="Left" Height="34" Margin="10,214,0,0" VerticalAlignment="Top" Width="782"/>
         <Label x:Name="drawLabel" Content="Draw" HorizontalAlignment="Left" Margin="335,254,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         <Label x:Name="divisionLabel" Content="Division:" HorizontalAlignment="Left" Margin="98,339,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="divisionDropBox" HorizontalAlignment="Left" Margin="196,343,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Button x:Name="viewDivisionButton" Content="View Division" HorizontalAlignment="Left" Margin="196,400,0,0" VerticalAlignment="Top" Width="86"/>
-        <Button x:Name="createDrawButton" Content="Create Draw" HorizontalAlignment="Left" Margin="431,342,0,0" VerticalAlignment="Top" Width="75" Click="CreateDrawButton_Click"/>
-        <Button x:Name="viewDrawButton" Content="View Draw" HorizontalAlignment="Left" Margin="563,342,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="divisionDropBox" HorizontalAlignment="Left" Margin="196,343,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" IsEnabled="False"/>
+        <Button x:Name="viewDivisionButton" Content="View Division" HorizontalAlignment="Left" Margin="196,400,0,0" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+        <Button x:Name="createDrawButton" Content="Create Draw" HorizontalAlignment="Left" Margin="431,342,0,0" VerticalAlignment="Top" Width="75" Click="CreateDrawButton_Click" IsEnabled="False"/>
+        <Button x:Name="viewDrawButton" Content="View Draw" HorizontalAlignment="Left" Margin="563,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Click="ViewDrawButton_Click"/>
         <ListView x:Name="dateList" HorizontalAlignment="Left" Height="144" Margin="658,83,0,0" VerticalAlignment="Top" Width="124">
             <ListView.View>
                 <GridView>

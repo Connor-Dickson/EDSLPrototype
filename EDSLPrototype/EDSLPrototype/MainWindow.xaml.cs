@@ -74,6 +74,12 @@ namespace EDSLPrototype
         private void saveSeason(object sender, RoutedEventArgs e)
         {
             Season test = new Season(seasonNameDropBox.Text, int.Parse(noOfRoundsTextBox.Text), startDateDropBox.Text, datList);
+            MessageBox.Show("Season Saved");
+            divisionDropBox.IsEnabled = true;
+            viewDivisionButton.IsEnabled = true;
+            createDrawButton.IsEnabled = true;
+            viewDrawButton.IsEnabled = true;
+
         }
 
         private void OnKeyDownHandler(object sender, KeyEventArgs e)
@@ -97,6 +103,15 @@ namespace EDSLPrototype
                     dateList.Items.Add(datList[i]);
                 }
             }
+            if(e.Key == Key.Delete)
+            {
+                datList.RemoveAt(0);
+                dateList.Items.RemoveAt(dateList.SelectedIndex);
+                string date = "26/06/2019";
+                datList.Add(date);
+                dateList.Items.Add(date);
+                
+            }
         }
 
         private void EditDatesButton_Click(object sender, RoutedEventArgs e)
@@ -107,6 +122,11 @@ namespace EDSLPrototype
         private void CreateDrawButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Generated Draw");
+        }
+
+        private void ViewDrawButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\102051563\source\repos\EDSLPrototype\Files\Mock Draw.pdf");
         }
     }
 }

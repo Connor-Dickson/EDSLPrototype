@@ -67,6 +67,9 @@ namespace EDSLPrototype
             MessageBox.Show("Ladder Updated");
         }
 
-        
+        private void ViewLadderButton_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\102051563\source\repos\EDSLPrototype\Files\Mock Ladder.pdf");
+        }
     }
 }

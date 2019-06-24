@@ -9,11 +9,11 @@
     <Grid>
         <Button x:Name="Season" Content="Season" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" Width="75" Click="displaySeasonScreen"/>
         <Button x:Name="Results_Copy" Content="Results" HorizontalAlignment="Left" Margin="163,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Reports" Content="Reports" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Divisions" Content="Divisions" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Clubs" Content="Clubs" HorizontalAlignment="Left" Margin="481,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="595,10,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Players" Content="Players" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Reports" Content="Reports" HorizontalAlignment="Left" Margin="272,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Divisions" Content="Divisions" HorizontalAlignment="Left" Margin="371,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Clubs" Content="Clubs" HorizontalAlignment="Left" Margin="481,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Teams" Content="Teams" HorizontalAlignment="Left" Margin="595,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Players" Content="Players" HorizontalAlignment="Left" Margin="707,10,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
         <Separator HorizontalAlignment="Left" Height="26" Margin="0,59,0,0" VerticalAlignment="Top" Width="782"/>
         <Label x:Name="resultsLabel" Content="Results" HorizontalAlignment="Left" Margin="371,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
         <ComboBox x:Name="seasonDropBox" HorizontalAlignment="Left" Margin="163,158,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
@@ -38,7 +38,7 @@
         </DataGrid>
         <Button x:Name="updateResultsButton" Content="Update Results" HorizontalAlignment="Left" Margin="140,551,0,0" VerticalAlignment="Top" Width="85" Click="UpdateResultsButton_Click"/>
         <Button x:Name="updateLadderButton" Content="Update Ladder" HorizontalAlignment="Left" Margin="371,551,0,0" VerticalAlignment="Top" Width="95" Click="UpdateLadderButton_Click"/>
-        <Button x:Name="viewLadderButton" Content="View Ladder" HorizontalAlignment="Left" Margin="577,551,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="viewLadderButton" Content="View Ladder" HorizontalAlignment="Left" Margin="577,551,0,0" VerticalAlignment="Top" Width="75" Click="ViewLadderButton_Click"/>
 
     </Grid>
 </Window>
